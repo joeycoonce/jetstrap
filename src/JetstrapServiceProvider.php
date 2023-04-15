@@ -2,9 +2,9 @@
 
 namespace JoeyCoonce\Jetstrap;
 
+use JoeyCoonce\Jetstrap\Commands\JetstrapCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use JoeyCoonce\Jetstrap\Commands\JetstrapCommand;
 
 class JetstrapServiceProvider extends PackageServiceProvider
 {
