@@ -3,8 +3,8 @@
 namespace JoeyCoonce\Jetstrap\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use JoeyCoonce\Jetstrap\JetstrapServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
