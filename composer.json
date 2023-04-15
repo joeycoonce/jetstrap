@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "joeycoonce/jetstrap",
+    "description": "A package for Laravel 10 that replaces Laravel Jetstream's TailwindCSS based Livewire stack with a Bootstrap 5.2 based Livewire stack.",
     "keywords": [
-        ":vendor_name",
+        "joeycoonce",
         "laravel",
-        ":package_slug"
+        "jetstrap"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/joeycoonce/jetstrap",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Joey Coonce",
+            "email": "joeycoonce@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "JoeyCoonce\\Jetstrap\\": "src/",
+            "JoeyCoonce\\Jetstrap\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "JoeyCoonce\\Jetstrap\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "JoeyCoonce\\Jetstrap\\JetstrapServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Jetstrap": "JoeyCoonce\\Jetstrap\\Facades\\Jetstrap"
             }
         }
     },
