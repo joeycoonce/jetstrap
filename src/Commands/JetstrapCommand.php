@@ -61,7 +61,7 @@ class JetstrapCommand extends Command
         (new Filesystem)->deleteDirectory(resource_path('css'));
 
         // Build configurations..
-      /*copy(__DIR__.'/../../stubs/postcss.config.js', base_path('postcss.config.js'));
+        copy(__DIR__.'/../../stubs/postcss.config.js', base_path('postcss.config.js'));
         copy(__DIR__.'/../../stubs/vite.config.js', base_path('vite.config.js'));
 
         // Blade views...
@@ -73,20 +73,20 @@ class JetstrapCommand extends Command
         (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/resources/sass', resource_path('sass'));
 
         // Javascript ...
-        (new Filesystem)->ensureDirectoryExists(resource_path('js'));
+      /*(new Filesystem)->ensureDirectoryExists(resource_path('js'));
         copy(__DIR__.'/../../stubs/resources/js/bootstrap.js', resource_path('js/bootstrap.js'));
-        copy(__DIR__.'/../../stubs/resources/js/app.js', resource_path('js/app.js'));
+        copy(__DIR__.'/../../stubs/resources/js/app.js', resource_path('js/app.js'));*/
 
         // Components
-        (new Filesystem)->ensureDirectoryExists(resource_path('js/Components'));
-        (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/resources/js/Components', resource_path('js/Components'));
+        (new Filesystem)->ensureDirectoryExists(resource_path('views/components'));
+        (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/resources/views/components', resource_path('views/components'));
 
         // Layouts
-        (new Filesystem)->ensureDirectoryExists(resource_path('js/Layouts'));
-        (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/resources/js/Layouts', resource_path('js/Layouts'));
+        (new Filesystem)->ensureDirectoryExists(resource_path('views/layouts'));
+        (new Filesystem)->copyDirectory(__DIR__.'/../../stubs/resources/js/Layouts', resource_path('views/layouts'));
 
         // Pages ...
-        (new Filesystem)->ensureDirectoryExists(resource_path('js/Pages'));
+      /*(new Filesystem)->ensureDirectoryExists(resource_path('js/Pages'));
         copy(__DIR__.'/../../stubs/resources/js/Pages/Dashboard.vue', resource_path('js/Pages/Dashboard.vue'));
         copy(__DIR__.'/../../stubs/resources/js/Pages/PrivacyPolicy.vue', resource_path('js/Pages/PrivacyPolicy.vue'));
         copy(__DIR__.'/../../stubs/resources/js/Pages/TermsOfService.vue', resource_path('js/Pages/TermsOfService.vue'));
