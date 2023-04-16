@@ -7,7 +7,6 @@ use Illuminate\Filesystem\Filesystem;
 
 class JetstrapCommand extends Command
 {
-
     /**
      * The name and signature of the console command.
      *
@@ -26,16 +25,14 @@ class JetstrapCommand extends Command
     {
         // Install ...
         $this->install();
-        
+
         // $this->comment('All done');
 
         return self::SUCCESS;
     }
-    
+
     /**
      * Install the Bootstrap scaffolding into the application.
-     *
-     * @return void
      */
     protected function install(): void
     {
@@ -117,9 +114,7 @@ class JetstrapCommand extends Command
     /**
      * Update the "package.json" file.
      *
-     * @param  callable  $callback
-     * @param  bool      $dev
-     * @return void
+     * @param  bool  $dev
      */
     protected static function updateNodePackages(callable $callback, $dev = true): void
     {
